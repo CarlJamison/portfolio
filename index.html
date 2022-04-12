@@ -9,14 +9,36 @@ body, html {
   height: 100%;
   font-family: 'Bebas Neue', cursive;
   margin: 0;
-  background-color: whitesmoke;
+  background-color: lightgray;
+}
+
+button{
+  background-color: #4d4d4d;
+  color: whitesmoke;
+  margin: 16px 8px;
+  padding: 4px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+h1{
+  color: #4d4d4d;
+  margin: 32px;
+  letter-spacing: 8px;
 }
 
 header{
-  background-image: linear-gradient(to bottom right, #ff81fb, #6f00b4);
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+}
+
+.neu{
+  box-shadow: 6px 6px 14px 0 rgb(0 0 0 / 20%), -8px -8px 18px 0 rgb(255 255 255 / 60%);
+  border-radius: 40px;
+  margin: 32px;
+  min-height: 250px;
+  background: linear-gradient(-45deg, lightgray, #f1f1f1);
 }
 
 @keyframes gradient {
@@ -46,18 +68,42 @@ header div{
 </style>
 <body>
 
-<!-- Links (sit on top) -->
-<div class="w3-top">
-
-</div>
-
 <!-- Header with image -->
 <header>
   <div>Carl Jamison</div>
 </header>
 
 <div>
+  <h1>Past Projects</h1>
 
+  <div class="neu">
+    <h1 style="padding-top: 32px;">Planes</h1>
+
+    <div style="margin: 0 32px">
+      Simple web socket based plane flying game.  Open the main screen on your laptop or desktop, then open the controller on one or more phones.  
+      Use the settings tab to mess with some variables, or start a game!
+    </br>https://github.com/CarlJamison/AirplaneV3
+      <div>
+        <button onclick="window.open('https://airplanesim.azurewebsites.net/master','_blank')">Main Screen</button>
+        <button onclick="window.open('https://airplanesim.azurewebsites.net/','_blank')">Controller</button>
+        <button onclick="window.open('https://airplanesim.azurewebsites.net/settings','_blank')">Settings</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="neu">
+    <h1 style="padding-top: 32px;">Thyme Killer</h1>
+  
+    <div style="margin: 0 32px">
+      Population simulator, going for a satisfying screen saver look.  Don't like the colors?  Refresh the page!
+      </br>https://github.com/CarlJamison/TimeKiller
+      <div>
+        <button onclick="window.open('http://thymekiller.tk','_blank')">Cool</button>
+      </div>
+    </div>
+  </div>
+
+  </div>
 </div>
 
 </body>
